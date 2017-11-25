@@ -1,0 +1,17 @@
+/* pages/show/show.wxss */
+image{
+  width: 100%;
+}
+input{
+   width: 95%; 
+  height: 100rpx;
+  border: 2rpx solid #ccc;
+  margin-left: 2.5%;
+  margin-top: -10rpx;
+  margin-bottom: 50rpx;
+  background-color: #ccc;
+}
+button{
+  width: 400rpx;
+  height: 100rpx;
+}

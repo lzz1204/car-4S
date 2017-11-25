@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/show/show",
+    "pages/products/products",
+    "pages/contact/contact",
+    "pages/product/product"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/首页.png",
+        "iconPath": "images/首页.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "selectedIconPath": "images/car.png",
+        "iconPath": "images/car.png",
+        "text": "所有车型"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "selectedIconPath": "images/预约.png",
+        "iconPath": "images/预约.png",
+        "text": "预约试驾"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "selectedIconPath": "images/联系.png",
+        "iconPath": "images/联系.png",
+        "text": "联系我们"
+      }
+    ]
+  }
+}

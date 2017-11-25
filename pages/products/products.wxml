@@ -1,0 +1,9 @@
+<!--pages/product/product.wxml-->
+<view class='body'>
+  <view wx:for="{{array}}" class='product'>
+    <view class='h'>{{item.h}}</view>
+    <view class='images'>
+      <image src="{{item.src1}}"></image>
+    </view>
+  </view>
+</view>

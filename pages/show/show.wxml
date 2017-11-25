@@ -1,0 +1,7 @@
+<!--pages/show/show.wxml-->
+<view class='order'>
+  <image class="image" mode="aspectFill" src="../../images/01.jpg"></image>
+  <input placeholder='请输入名字'></input>
+  <input placeholder='请输入电话号码'></input>
+  <button>提交预约</button>
+</view>

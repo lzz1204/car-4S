@@ -1,0 +1,24 @@
+/* pages/product/product.wxss */
+.product .content{
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  margin-top: -9rpx;
+}
+.product image{
+ width: 100%;
+ 
+}
+.product .content .part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30rpx
+}
+.product .button{
+   width:100%;
+   color:#fff;
+   margin-top: 50rpx;
+  text-align: center; 
+  background-color: #000; 
+}
