@@ -1,14 +1,14 @@
 <!--pages/product/product.wxml-->
 <view class='product'>
-    <view wx:for="{{product}}" >
-      <image src="{{item.src1}}" mode="aspectFill"></image>
+    <view>
+      <image src="{{product.image}}" mode="aspectFill"></image>
       <view class='content'>
-        <view class='part'><view>型号</view>{{item.xing}}</view>
-      <view class='part'><view>功率</view>{{item.power}}</view>
-      <view class='part'><view>0-100km/h 加速时</view>{{item.speed}}</view>
-      <view class='part'><view>最高时速</view>{{item.km}}</view>
-      <view class='part'><view>耗油量 混合(L/100km)</view>{{item.oil}}</view>
-      <view class='part'><view>价格</view>{{item.prize}}</view>
+        <view class='part'><view>型号</view>{{product.name}}</view>
+       <view class='part'><view>功率</view>{{product.detail.power}}</view>
+      <view class='part'><view>0-100km/h 加速时</view>{{product.detail.zeroTo100}}</view>
+      <view class='part'><view>最高时速</view>{{product.detail.topSpeed}}</view>
+      <view class='part'><view>耗油量 混合(L/100km)</view>{{product.detail.oilWear}}</view> 
+      <view class='part'><view>价格</view>{{product.price}}</view>
       </view>
       <button bindtap="handleContact" class='button'>预约试驾</button>
   </view>

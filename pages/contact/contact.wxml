@@ -1,2 +1,22 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+    <image src="{{src}}" mode='aspectFill' ></image>
+    <view>许昌学院东校区</view>
+    <view>鲤鱼IT地址:</view>
+     <view class='contact'>
+      <view>许昌学院东校区创新创业楼</view>
+      <image src="../../images/address.png" class='img1' bindtap='handleMap'></image>
+    </view> 
+     <view class='body'>电话: 
+      <view class='contact'>
+        <view>123456789</view>
+        <view><image src="../../images/phone.png" class='img1' bindtap='handlePhone'></image></view>
+        </view>
+      </view>
+
+
+
+    
+ 
+    
+
+

@@ -13,7 +13,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 30rpx
+  margin-bottom: 30rpx;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .product .button{
    width:100%;

@@ -3,11 +3,11 @@
   <view class='logo'>
        <image class="image" mode="scaleToFill" src="{{src}}"></image>
   </view>
-  <view wx:for="{{array}}" class='img'  >
+  <view wx:for="{{arr}}" class='img' wx:key="_id" >
   <view bindtap='handleproduct' >
-    <image mode="aspectFill" src="{{item.src1}}" data-id="{{item.id}}"></image>
-    <view class='h3' data-id="{{item.id}}">{{item.h}}</view>
-    <view class='title' data-id="{{item.id}}">{{item.title}}</view>
+    <image mode="aspectFill" src="{{item.image}}" data-id="{{item._id}}"></image>
+    <view class='h3' data-id="{{item._id}}">{{item.name}}</view>
+    <view class='title' data-id="{{item._id}}">{{item.price}}</view>
     <view class='line' ></view>
   </view>
    <button class='button' bindtap='Contact'>预约试驾</button>

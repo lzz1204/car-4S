@@ -11,7 +11,7 @@ Page({
       { xing: "718 Cayma", power: "331KW(450hp)/6,500rp", speed: "3.7s", km: "310km/h", oil: "8.", prize: "1,610,000元，含增值", id: "0003", src1: "../../images/03.jpg" },
       { xing: "718 Cayma", power: "331KW(450hp)/6,500rp", speed: "3.7s", km: "310km/h", oil: "8.", prize: "1,610,000元，含增值", id: "0004", src1: "../../images/04.jpg" },
     ],
-    product:[],
+    product:{},
   },
 
   /**
@@ -19,13 +19,18 @@ Page({
    */
   onLoad: function (option) {
     console.log(option);
-    var arr = this.data.array.filter(function (item) {
-      return item.id == option.id;
+    const str = option.id;
+    wx.request({
+      url: 'http://192.168.1.210:3000/manage/product/'+str,
+      success: (res)=>{
+        console.log("resss",res);
+        this.setData({
+          product: res.data.doc,
+        })
+      }
     })
-    console.log("item",arr)
-    this.setData({
-      product:arr
-    })
+    
+   
   },
   handleContact: function(){
     wx.switchTab({

@@ -4,7 +4,8 @@
     "pages/show/show",
     "pages/products/products",
     "pages/contact/contact",
-    "pages/product/product"
+    "pages/product/product",
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "light",

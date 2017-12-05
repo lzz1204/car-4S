@@ -1,1 +1,13 @@
 /* pages/contact/contact.wxss */
+ image{
+   width: 100%;
+ }
+.img1{
+  width: 50rpx;
+  height: 50rpx;
+}
+.contact{
+  width: 100%;
+   display: flex; 
+  justify-content: space-between;
+}

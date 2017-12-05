@@ -1,4 +1,7 @@
 // pages/product/product.js
+const innerAudioContext = wx.createInnerAudioContext()
+
+innerAudioContext.src = "/images/hetu.mp3";
 Page({
 
   /**
@@ -10,14 +13,18 @@ Page({
       { src1: "../../images/02.jpg", h: "新款 911 GTS", title: "天性不羁" },
       { src1: "../../images/03.jpg", h: "全新 Panamera", title: "一往无前" },
       { src1: "../../images/04.jpg", h: "Macan Turbo", title: "激情澎湃" },
-    ]
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
@@ -31,14 +38,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    innerAudioContext.play();
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+    innerAudioContext.stop();
   },
 
   /**

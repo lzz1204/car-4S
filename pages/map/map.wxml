@@ -1,0 +1,2 @@
+<!--pages/map/map.wxml-->
+      <map id="map" longitude="113.869890" latitude="34.043921"  markers="{{markers}}"  polyline="{{polyline}}" show-location style="width: 100%; height: 300px;"></map>
